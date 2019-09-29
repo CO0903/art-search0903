@@ -6,6 +6,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
+import { MaterialComponent } from './material/material.component';
+import { MatButtonModule } from '@angular/material';
+import { MatIconModule } from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -13,11 +17,14 @@ import { LoginComponent } from './login/login.component';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
+    MaterialComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
