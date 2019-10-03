@@ -9,7 +9,8 @@ import { LoginComponent } from './login/login.component';
 import { MaterialComponent } from './material/material.component';
 import { MatButtonModule } from '@angular/material';
 import { MatIconModule } from '@angular/material';
-
+import { RouterModule, Routes } from '@angular/router';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,15 @@ import { MatIconModule } from '@angular/material';
     FooterComponent,
     LoginComponent,
     MaterialComponent,
+    RouterModule
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

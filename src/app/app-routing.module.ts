@@ -6,7 +6,10 @@ import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   { path: 'material', component: MaterialComponent },
+  { path: 'header', component: HeaderComponent },
+  { path: 'footer', component: FooterComponent },
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
