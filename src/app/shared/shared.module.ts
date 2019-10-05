@@ -1,15 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { HeaderComponent } from '../header/header.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    HeaderComponent,
+    FooterComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
-    CommonModule
+    CommonModule,
+    MatToolbarModule
   ]
 })
 export class SharedModule { }

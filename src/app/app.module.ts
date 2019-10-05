@@ -9,8 +9,9 @@ import { LoginComponent } from './login/login.component';
 import { MaterialComponent } from './material/material.component';
 import { MatButtonModule } from '@angular/material';
 import { MatIconModule } from '@angular/material';
-import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from './shared/shared.module';
+import { TopModule } from './top/top.module';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { SharedModule } from './shared/shared.module';
     FooterComponent,
     LoginComponent,
     MaterialComponent,
-    RouterModule
+    TopModule
   ],
   imports: [
     BrowserModule,
