@@ -2,17 +2,20 @@ import { NgModule } from '@angular/core';
 import { TopRoutingModule } from './top-routing.module';
 import { TopComponent } from './top.component';
 import { SharedModule } from '../shared/shared.module';
-import { HeaderComponent } from '../header/header.component';
-import { FooterComponent } from '../footer/footer.component';
+import { HeaderModule } from '../header/header.module';
+import { FooterModule } from '../footer/footer.module';
 
 
 @NgModule({
-  declarations: [TopComponent,
-  HeaderComponent,
-  FooterComponent],
+  declarations: [
+    TopComponent,
+  ],
   imports: [
     TopRoutingModule,
-    SharedModule
+    SharedModule,
+    TopModule,
+    HeaderModule,
+    FooterModule
   ]
 })
 export class TopModule { }

@@ -3,21 +3,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { MaterialComponent } from './material/material.component';
 import { MatButtonModule } from '@angular/material';
 import { MatIconModule } from '@angular/material';
 import { SharedModule } from './shared/shared.module';
 import { TopModule } from './top/top.module';
+import { HeaderModule } from './header/header.module';
+import { FooterModule } from './footer/footer.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
     LoginComponent,
     MaterialComponent,
     TopModule
@@ -28,7 +26,9 @@ import { TopModule } from './top/top.module';
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    SharedModule
+    SharedModule,
+    HeaderModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
