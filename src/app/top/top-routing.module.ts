@@ -1,23 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HeaderModule } from '../header/header.module';
-import { FooterModule } from '../footer/footer.module';
-import { TopModule } from './top.module';
 import { TopComponent } from './top.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 const routes: Routes = [
-  {
-    path : '',
-    component : TopComponent
-  }
+  {path : '', component : TopComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes),
-            HeaderModule,
-            FooterModule,
-            TopModule],
+            SharedModule
+          ],
   exports: [RouterModule]
 })
 export class TopRoutingModule { }

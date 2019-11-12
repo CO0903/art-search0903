@@ -1,24 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginComponent } from './login/login.component';
 import { MaterialComponent } from './material/material.component';
 import { MatButtonModule } from '@angular/material';
 import { MatIconModule } from '@angular/material';
 import { SharedModule } from './shared/shared.module';
-import { TopModule } from './top/top.module';
 import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
+import { TopComponent } from './top/top.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     MaterialComponent,
-    TopModule
+    TopComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -26,11 +28,10 @@ import { FooterModule } from './footer/footer.module';
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    SharedModule,
-    HeaderModule,
-    FooterModule
+    SharedModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
 })
 export class AppModule { }

@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { TopRoutingModule } from './top-routing.module';
 import { TopComponent } from './top.component';
 import { SharedModule } from '../shared/shared.module';
-import { HeaderModule } from '../header/header.module';
-import { FooterModule } from '../footer/footer.module';
 
 
 @NgModule({
@@ -13,9 +11,7 @@ import { FooterModule } from '../footer/footer.module';
   imports: [
     TopRoutingModule,
     SharedModule,
-    TopModule,
-    HeaderModule,
-    FooterModule
+    TopModule
   ]
 })
 export class TopModule { }
